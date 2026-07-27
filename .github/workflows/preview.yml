@@ -1,6 +1,7 @@
 name: PR Preview Deploy
 
 on:
+  workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened, closed]
     paths:
