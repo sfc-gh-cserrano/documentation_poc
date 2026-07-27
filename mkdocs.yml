@@ -4,7 +4,6 @@ site_url: ""
 
 theme:
   name: material
-  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/logo.png
   navigation_depth: 5
