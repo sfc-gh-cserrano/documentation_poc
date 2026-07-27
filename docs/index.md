@@ -4,7 +4,7 @@ Welcome to Cerebro, a repository-based system for knowledge hosting through mark
 
 ## Quick Links
 
-- [Getting Started](getting-started/index.md) - Learn how to contribute content
+- [Getting Started](getting-started/getting_started.md) - Learn how to contribute content
 
 ## How It Works
 
