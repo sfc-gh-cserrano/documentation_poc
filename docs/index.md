@@ -1,6 +1,6 @@
 ---
 icon: material/home
-title: Home
+title: Cerebro
 ---
 
 # :material-snowflake: Cerebro - GRE Knowledge Management
