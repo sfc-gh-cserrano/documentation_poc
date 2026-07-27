@@ -1,5 +1,5 @@
 ---
-icon: material-bell-ring
+icon: material/bell-ring
 title: Configuring Alerts
 ---
 

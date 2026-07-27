@@ -1,5 +1,5 @@
 ---
-icon: material-cloud-download
+icon: material/cloud-download
 title: Snowpipe
 ---
 
