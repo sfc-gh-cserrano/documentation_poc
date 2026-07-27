@@ -1,0 +1,1148 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Repository-based knowledge hosting through markdown documents" name="description"/>
+<link href="../content/" rel="prev"/>
+<link href="../data-mart/" rel="next"/>
+<link href="../../../assets/logo.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.18" name="generator"/>
+<title>Core Platform - Cerebro - GRE Knowledge Management</title>
+<link href="../../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+<link href="../../../stylesheets/snowflake.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="custom" data-md-color-primary="custom" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#core-platform">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Cerebro - GRE Knowledge Management" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Cerebro - GRE Knowledge Management">
+<img alt="logo" src="../../../assets/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Cerebro - GRE Knowledge Management
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Core Platform
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="custom" data-md-color-media="" data-md-color-primary="custom" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="custom" data-md-color-media="" data-md-color-primary="custom" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Cerebro - GRE Knowledge Management" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Cerebro - GRE Knowledge Management">
+<img alt="logo" src="../../../assets/logo.png"/>
+</a>
+    Cerebro - GRE Knowledge Management
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Data Sources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Data Sources
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4Z"></path></svg>
+<span class="md-ellipsis">
+    Docebo Learn
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Docebo Learn
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../audiences/">
+<span class="md-ellipsis">
+    Audiences &amp; Subscriptions
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../certifications/">
+<span class="md-ellipsis">
+    Certifications &amp; Transcripts
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../coach-and-share/">
+<span class="md-ellipsis">
+    Coach &amp; Share
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../content/">
+<span class="md-ellipsis">
+    Content &amp; Marketplace
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Core Platform
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Core Platform
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#er-diagram-key-tables">
+<span class="md-ellipsis">
+      ER Diagram — Key Tables
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-tables">
+<span class="md-ellipsis">
+      All Tables
+    </span>
+</a>
+<nav aria-label="All Tables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#core-platform-62-tables">
+<span class="md-ellipsis">
+      Core Platform (62 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-3-tables">
+<span class="md-ellipsis">
+      User (3 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#branches-1-table">
+<span class="md-ellipsis">
+      Branches (1 table)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#login-1-table">
+<span class="md-ellipsis">
+      Login (1 table)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rbac-4-tables">
+<span class="md-ellipsis">
+      RBAC (4 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-users-2-tables">
+<span class="md-ellipsis">
+      Power Users (2 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manager-types-1-table">
+<span class="md-ellipsis">
+      Manager Types (1 table)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cross-domain-relationships">
+<span class="md-ellipsis">
+      Cross-Domain Relationships
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data-mart/">
+<span class="md-ellipsis">
+    Data Mart
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ecommerce/">
+<span class="md-ellipsis">
+    E-Commerce &amp; Payments
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../enrollments/">
+<span class="md-ellipsis">
+    Enrollments
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ilt-sessions/">
+<span class="md-ellipsis">
+    ILT Sessions &amp; Webinars
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../learning/">
+<span class="md-ellipsis">
+    Learning
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../platform-config/">
+<span class="md-ellipsis">
+    Platform Configuration
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../skills/">
+<span class="md-ellipsis">
+    Skills, On-the-Job &amp; Gamification
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../getting_started/contributing/">
+<span class="md-ellipsis">
+    Contributing to Cerebro
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../getting_started/getting_started/">
+<span class="md-ellipsis">
+    Getting Started
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#er-diagram-key-tables">
+<span class="md-ellipsis">
+      ER Diagram — Key Tables
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-tables">
+<span class="md-ellipsis">
+      All Tables
+    </span>
+</a>
+<nav aria-label="All Tables" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#core-platform-62-tables">
+<span class="md-ellipsis">
+      Core Platform (62 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-3-tables">
+<span class="md-ellipsis">
+      User (3 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#branches-1-table">
+<span class="md-ellipsis">
+      Branches (1 table)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#login-1-table">
+<span class="md-ellipsis">
+      Login (1 table)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rbac-4-tables">
+<span class="md-ellipsis">
+      RBAC (4 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-users-2-tables">
+<span class="md-ellipsis">
+      Power Users (2 tables)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manager-types-1-table">
+<span class="md-ellipsis">
+      Manager Types (1 table)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cross-domain-relationships">
+<span class="md-ellipsis">
+      Cross-Domain Relationships
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="core-platform">Core Platform<a class="headerlink" href="#core-platform" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>Users, groups, roles, org structure, notifications, platform settings, and access control.</p>
+</blockquote>
+<p>This domain is the <strong>foundation</strong> of the Docebo data model. The <code>CORE_USER</code> table (PK: <code>idst</code>) is referenced by virtually every other domain.</p>
+<p><strong>Domains covered</strong>: Core Platform (62), User (3), Branches (1), Login (1), RBAC (4), Power Users (2), Manager Types (1)<br/>
+<strong>Total tables</strong>: 72 | <strong>Total columns</strong>: ~930 | <strong>Total FKs</strong>: ~44</p>
+<hr/>
+<h2 id="er-diagram-key-tables">ER Diagram — Key Tables<a class="headerlink" href="#er-diagram-key-tables" title="Permanent link">¶</a></h2>
+<div class="mermaid">erDiagram
+    CORE_USER {
+        NUMBER idst PK
+        STRING userid
+        STRING firstname
+        STRING lastname
+        STRING email
+        NUMBER valid
+        TIMESTAMP register_date
+    }
+
+    CORE_GROUP {
+        NUMBER idst PK
+        STRING groupid
+        NUMBER idparent
+        NUMBER type_of_group
+    }
+
+    CORE_GROUP_MEMBERS {
+        NUMBER idst FK
+        NUMBER idstmember FK
+    }
+
+    CORE_ROLE {
+        NUMBER idst PK
+        STRING roleid
+    }
+
+    CORE_ROLE_MEMBERS {
+        NUMBER idst FK
+        NUMBER idstmember FK
+    }
+
+    CORE_ORG_CHART_TREE {
+        NUMBER id PK
+        NUMBER id_dir FK
+        NUMBER id_user FK
+    }
+
+    BRANCH {
+        NUMBER idorg PK
+        STRING translation
+    }
+
+    RBAC_ASSIGNMENT {
+        NUMBER item_name FK
+        NUMBER user_id FK
+    }
+
+    RBAC_ITEM {
+        NUMBER name PK
+        NUMBER type
+    }
+
+    PU_PERMISSION {
+        NUMBER id PK
+        STRING code
+    }
+
+    LOGIN_COUNT {
+        NUMBER id PK
+        NUMBER iduser FK
+        TIMESTAMP last_login
+    }
+
+    CORE_USER ||--o{ CORE_GROUP_MEMBERS : "member of"
+    CORE_GROUP ||--o{ CORE_GROUP_MEMBERS : "has members"
+    CORE_USER ||--o{ CORE_ROLE_MEMBERS : "assigned role"
+    CORE_ROLE ||--o{ CORE_ROLE_MEMBERS : "has members"
+    CORE_USER ||--o{ CORE_ORG_CHART_TREE : "in org chart"
+    CORE_USER ||--o{ LOGIN_COUNT : "login history"
+    CORE_USER ||--o{ RBAC_ASSIGNMENT : "RBAC assigned"
+    RBAC_ITEM ||--o{ RBAC_ASSIGNMENT : "assigned to"
+</div>
+<hr/>
+<h2 id="all-tables">All Tables<a class="headerlink" href="#all-tables" title="Permanent link">¶</a></h2>
+<h3 id="core-platform-62-tables">Core Platform (62 tables)<a class="headerlink" href="#core-platform-62-tables" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CORE_ADMIN_COURSE</td>
+<td>6</td>
+<td>0</td>
+<td>Relationship between power user and learning item</td>
+</tr>
+<tr>
+<td>CORE_ADMIN_TMREPO_FOLDER</td>
+<td>10</td>
+<td>3</td>
+<td>Training material repository folder admin</td>
+</tr>
+<tr>
+<td>CORE_ADMIN_TREE</td>
+<td>6</td>
+<td>0</td>
+<td>Relationship between power users and user groups</td>
+</tr>
+<tr>
+<td>CORE_ASSET</td>
+<td>13</td>
+<td>2</td>
+<td>Uploaded assets metadata (S3)</td>
+</tr>
+<tr>
+<td>CORE_COUNTRY</td>
+<td>8</td>
+<td>0</td>
+<td>Platform countries code</td>
+</tr>
+<tr>
+<td>CORE_DELETED_USER</td>
+<td>20</td>
+<td>0</td>
+<td>User soft deletion table</td>
+</tr>
+<tr>
+<td>CORE_ENROLL_LOG</td>
+<td>7</td>
+<td>1</td>
+<td>Performed enrollment rules log</td>
+</tr>
+<tr>
+<td>CORE_ENROLL_LOG_ITEM</td>
+<td>9</td>
+<td>1</td>
+<td>Enrolled entities performed by enrollment rules</td>
+</tr>
+<tr>
+<td>CORE_ENROLL_RULE</td>
+<td>17</td>
+<td>2</td>
+<td>Enrollment rules metadata</td>
+</tr>
+<tr>
+<td>CORE_ENROLL_RULE_ITEM</td>
+<td>8</td>
+<td>1</td>
+<td>Enroll rules configuration</td>
+</tr>
+<tr>
+<td>CORE_GROUP</td>
+<td>15</td>
+<td>1</td>
+<td>Groups metadata</td>
+</tr>
+<tr>
+<td>CORE_GROUP_ASSIGN_RULES</td>
+<td>8</td>
+<td>1</td>
+<td>User group assignment rules</td>
+</tr>
+<tr>
+<td>CORE_GROUP_FIELDS</td>
+<td>9</td>
+<td>1</td>
+<td>Branch additional fields</td>
+</tr>
+<tr>
+<td>CORE_GROUP_MEMBERS</td>
+<td>7</td>
+<td>1</td>
+<td>Relationship between users and groups/branches</td>
+</tr>
+<tr>
+<td>CORE_HTTPS</td>
+<td>29</td>
+<td>1</td>
+<td>HTTPS certificates list</td>
+</tr>
+<tr>
+<td>CORE_JOB</td>
+<td>28</td>
+<td>1</td>
+<td>Internal scheduler jobs</td>
+</tr>
+<tr>
+<td>CORE_JOB_ARCHIVE</td>
+<td>31</td>
+<td>0</td>
+<td>Archived scheduler jobs</td>
+</tr>
+<tr>
+<td>CORE_JOB_LOG</td>
+<td>10</td>
+<td>1</td>
+<td>List of performed jobs</td>
+</tr>
+<tr>
+<td>CORE_LANG_LANGUAGE</td>
+<td>10</td>
+<td>0</td>
+<td>Supported languages metadata</td>
+</tr>
+<tr>
+<td>CORE_LANG_TEXT</td>
+<td>8</td>
+<td>0</td>
+<td>Custom language keys override</td>
+</tr>
+<tr>
+<td>CORE_LANG_TRANSLATION</td>
+<td>9</td>
+<td>0</td>
+<td>Custom translations for supported languages</td>
+</tr>
+<tr>
+<td>CORE_MULTIDOMAIN</td>
+<td>194</td>
+<td>0</td>
+<td>Multidomain instances metadata</td>
+</tr>
+<tr>
+<td>CORE_MULTIDOMAIN_HEADER_FOOTER</td>
+<td>9</td>
+<td>0</td>
+<td>Custom HTML header/footer</td>
+</tr>
+<tr>
+<td>CORE_MULTIDOMAIN_SIGNIN_TEXT</td>
+<td>8</td>
+<td>1</td>
+<td>Custom signin page HTML</td>
+</tr>
+<tr>
+<td>CORE_MULTIDOMAIN_WEBPAGE</td>
+<td>7</td>
+<td>2</td>
+<td>Webpage-to-multidomain relationship</td>
+</tr>
+<tr>
+<td>CORE_NEWSLETTER</td>
+<td>13</td>
+<td>0</td>
+<td>Sent newsletters metadata</td>
+</tr>
+<tr>
+<td>CORE_NEWSLETTER_SENDTO</td>
+<td>8</td>
+<td>0</td>
+<td>Newsletter delivery statuses</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION</td>
+<td>23</td>
+<td>1</td>
+<td>Notifications metadata</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_ASSOC</td>
+<td>7</td>
+<td>1</td>
+<td>Notification-content relationship</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_RECIPIENTS_BATCH</td>
+<td>14</td>
+<td>0</td>
+<td>Notification batch recipients</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_TRANSLATION</td>
+<td>9</td>
+<td>0</td>
+<td>Notification translations</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_TRANSPORT</td>
+<td>10</td>
+<td>0</td>
+<td>Notification transport channels</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_TRANSPORT_ACTIVATION</td>
+<td>7</td>
+<td>0</td>
+<td>Transport activation settings</td>
+</tr>
+<tr>
+<td>CORE_NOTIFICATION_USER_FILTER</td>
+<td>7</td>
+<td>1</td>
+<td>User notification filters</td>
+</tr>
+<tr>
+<td>CORE_ORG_CHART</td>
+<td>11</td>
+<td>1</td>
+<td>Organization chart metadata</td>
+</tr>
+<tr>
+<td>CORE_ORG_CHART_TREE</td>
+<td>11</td>
+<td>1</td>
+<td>Org chart tree hierarchy</td>
+</tr>
+<tr>
+<td>CORE_PLUGIN</td>
+<td>5</td>
+<td>0</td>
+<td>Installed plugins list</td>
+</tr>
+<tr>
+<td>CORE_PWD_RECOVER</td>
+<td>9</td>
+<td>0</td>
+<td>Password recovery tokens</td>
+</tr>
+<tr>
+<td>CORE_ROLE</td>
+<td>8</td>
+<td>0</td>
+<td>Roles metadata</td>
+</tr>
+<tr>
+<td>CORE_ROLE_MEMBERS</td>
+<td>7</td>
+<td>1</td>
+<td>User-to-role assignments</td>
+</tr>
+<tr>
+<td>CORE_SETTING</td>
+<td>7</td>
+<td>0</td>
+<td>Platform settings (key-value)</td>
+</tr>
+<tr>
+<td>CORE_SETTING_GROUP</td>
+<td>7</td>
+<td>0</td>
+<td>Settings grouped by module</td>
+</tr>
+<tr>
+<td>CORE_SETTING_LARGE_VOLUME</td>
+<td>6</td>
+<td>0</td>
+<td>Large volume settings</td>
+</tr>
+<tr>
+<td>CORE_SETTING_TINCAN_URL</td>
+<td>6</td>
+<td>0</td>
+<td>xAPI (Tin Can) URL settings</td>
+</tr>
+<tr>
+<td>CORE_SETTING_USER</td>
+<td>7</td>
+<td>0</td>
+<td>Per-user settings</td>
+</tr>
+<tr>
+<td>CORE_SETTING_WHITELIST</td>
+<td>5</td>
+<td>0</td>
+<td>Setting value whitelist</td>
+</tr>
+<tr>
+<td>CORE_ST</td>
+<td>12</td>
+<td>0</td>
+<td>Session tokens</td>
+</tr>
+<tr>
+<td>CORE_TIMEZONE_TRANSLATE</td>
+<td>7</td>
+<td>0</td>
+<td>Timezone translations</td>
+</tr>
+<tr>
+<td>CORE_USER</td>
+<td>37</td>
+<td>0</td>
+<td><strong>Central user table</strong> — all domains reference this</td>
+</tr>
+<tr>
+<td>CORE_USER_2FA_SECRETS</td>
+<td>8</td>
+<td>0</td>
+<td>Two-factor authentication secrets</td>
+</tr>
+<tr>
+<td>CORE_USER_BILLING</td>
+<td>15</td>
+<td>0</td>
+<td>User billing information</td>
+</tr>
+<tr>
+<td>CORE_USER_FIELD</td>
+<td>17</td>
+<td>0</td>
+<td>Custom user field definitions</td>
+</tr>
+<tr>
+<td>CORE_USER_FIELD_DROPDOWN</td>
+<td>9</td>
+<td>0</td>
+<td>Dropdown options for custom fields</td>
+</tr>
+<tr>
+<td>CORE_USER_FIELD_DROPDOWN_TRANSLATIONS</td>
+<td>7</td>
+<td>0</td>
+<td>Translations for dropdown options</td>
+</tr>
+<tr>
+<td>CORE_USER_FIELD_TRANSLATION</td>
+<td>7</td>
+<td>0</td>
+<td>Translations for custom field labels</td>
+</tr>
+<tr>
+<td>CORE_USER_FIELD_VALUE</td>
+<td>9</td>
+<td>1</td>
+<td>Custom field values per user</td>
+</tr>
+<tr>
+<td>CORE_USER_PU</td>
+<td>8</td>
+<td>1</td>
+<td>Power user assignments</td>
+</tr>
+<tr>
+<td>CORE_USER_PU_COURSE</td>
+<td>7</td>
+<td>0</td>
+<td>Power user course permissions</td>
+</tr>
+<tr>
+<td>CORE_USER_PU_COURSEPATH</td>
+<td>7</td>
+<td>0</td>
+<td>Power user learning path permissions</td>
+</tr>
+<tr>
+<td>CORE_USER_PU_LOCATION</td>
+<td>7</td>
+<td>0</td>
+<td>Power user location permissions</td>
+</tr>
+<tr>
+<td>CORE_USER_TEMP</td>
+<td>30</td>
+<td>0</td>
+<td>Temporary user records (pre-activation)</td>
+</tr>
+<tr>
+<td>CORE_USER_TOKEN_IMPERSONATED</td>
+<td>10</td>
+<td>0</td>
+<td>Impersonation tokens</td>
+</tr>
+</tbody>
+</table>
+<h3 id="user-3-tables">User (3 tables)<a class="headerlink" href="#user-3-tables" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USER_BRANCH</td>
+<td>3</td>
+<td>0</td>
+<td>User-to-branch snapshot</td>
+</tr>
+<tr>
+<td>USER_GROUP</td>
+<td>3</td>
+<td>0</td>
+<td>User-to-group snapshot</td>
+</tr>
+<tr>
+<td>USER_SNAPSHOT_KPI</td>
+<td>5</td>
+<td>0</td>
+<td>User count KPI snapshots</td>
+</tr>
+</tbody>
+</table>
+<h3 id="branches-1-table">Branches (1 table)<a class="headerlink" href="#branches-1-table" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BRANCH</td>
+<td>6</td>
+<td>0</td>
+<td>Organizational branch definitions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="login-1-table">Login (1 table)<a class="headerlink" href="#login-1-table" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOGIN_COUNT</td>
+<td>7</td>
+<td>1</td>
+<td>User login count and last login timestamp</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rbac-4-tables">RBAC (4 tables)<a class="headerlink" href="#rbac-4-tables" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RBAC_ASSIGNMENT</td>
+<td>6</td>
+<td>1</td>
+<td>Role-based access control assignments</td>
+</tr>
+<tr>
+<td>RBAC_ITEM</td>
+<td>9</td>
+<td>0</td>
+<td>RBAC permission items</td>
+</tr>
+<tr>
+<td>RBAC_ITEM_CHILD</td>
+<td>7</td>
+<td>2</td>
+<td>Parent-child permission hierarchy</td>
+</tr>
+<tr>
+<td>RBAC_RULE</td>
+<td>9</td>
+<td>1</td>
+<td>RBAC rules definitions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="power-users-2-tables">Power Users (2 tables)<a class="headerlink" href="#power-users-2-tables" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PU_PERMISSION</td>
+<td>12</td>
+<td>1</td>
+<td>Power user permission definitions</td>
+</tr>
+<tr>
+<td>PU_PERMISSION_DEPENDENCY</td>
+<td>6</td>
+<td>1</td>
+<td>Permission dependency graph</td>
+</tr>
+</tbody>
+</table>
+<h3 id="manager-types-1-table">Manager Types (1 table)<a class="headerlink" href="#manager-types-1-table" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Cols</th>
+<th>FKs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MANAGER_TYPE</td>
+<td>7</td>
+<td>0</td>
+<td>Manager type definitions (direct, dotted-line, etc.)</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="cross-domain-relationships">Cross-Domain Relationships<a class="headerlink" href="#cross-domain-relationships" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Source Table</th>
+<th>FK Column</th>
+<th>Target Domain</th>
+<th>Target Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CORE_ENROLL_RULE</td>
+<td>idcourse</td>
+<td><a href="../learning/">Learning</a></td>
+<td>LEARNING_COURSE</td>
+</tr>
+<tr>
+<td>CORE_MULTIDOMAIN_WEBPAGE</td>
+<td>idpage</td>
+<td><a href="../platform-config/">Platform Config</a></td>
+<td>PAGE</td>
+</tr>
+<tr>
+<td>CORE_ASSET</td>
+<td>*</td>
+<td>Referenced by</td>
+<td><a href="../learning/">Learning</a>, <a href="../coach-and-share/">Coach &amp; Share</a></td>
+</tr>
+<tr>
+<td>LOGIN_COUNT</td>
+<td>iduser</td>
+<td>Core Platform</td>
+<td>CORE_USER</td>
+</tr>
+</tbody>
+</table>
+<p>Most domains contain FKs <strong>to</strong> CORE_USER.idst — see individual domain docs for specifics.</p>
+<hr/>
+<p><a href="../">Back to README</a></p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.title", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
