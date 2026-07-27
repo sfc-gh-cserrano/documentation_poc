@@ -28,8 +28,7 @@ jobs:
         run: uv run mkdocs build --strict
 
       - name: Deploy preview
-        uses: peaceiris/actions-gh-pages@v4
-        # TODO: update to v5 when available for Node 24 support
+        uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
@@ -37,8 +36,7 @@ jobs:
           keep_files: true
 
       - name: Comment preview URL
-        uses: actions/github-script@v7
-        # TODO: update when Node 24 version released
+        uses: actions/github-script@v8
         with:
           script: |
             const prNumber = context.payload.pull_request.number;

@@ -27,8 +27,7 @@ jobs:
         run: uv run mkdocs build --strict
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        # TODO: update to v5 when available for Node 24 support
+        uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
