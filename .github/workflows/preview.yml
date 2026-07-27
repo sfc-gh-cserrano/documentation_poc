@@ -16,10 +16,10 @@ jobs:
     if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v5
 
       - name: Install dependencies
         run: uv sync
@@ -29,6 +29,7 @@ jobs:
 
       - name: Deploy preview
         uses: peaceiris/actions-gh-pages@v4
+        # TODO: update to v5 when available for Node 24 support
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
@@ -37,6 +38,7 @@ jobs:
 
       - name: Comment preview URL
         uses: actions/github-script@v7
+        # TODO: update when Node 24 version released
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
@@ -76,7 +78,7 @@ jobs:
     if: github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: gh-pages
 
