@@ -1,6 +1,5 @@
 ---
-icon: material/info
-title: Abouot
+title: About
 ---
 
 # About Cerebro
