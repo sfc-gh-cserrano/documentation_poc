@@ -1,0 +1,69 @@
+site_name: Cerebro - GRE Knowledge Management
+site_description: Repository-based knowledge hosting through markdown documents
+site_url: ""
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  navigation_depth: 5
+  collapse_navigation: true
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.top
+    - navigation.title
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+extra_css:
+  - stylesheets/snowflake.css
+
+plugins:
+  - search:
+      lang: en
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# nav:
+#   - Home: index.md
+#   - More:
+#     - Getting Started: getting-started/index.md
+#     - Contibuting:
+#       - Contibuting: contributing/index.md

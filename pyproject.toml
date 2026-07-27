@@ -1,0 +1,9 @@
+[project]
+name = "cerebro"
+version = "0.1.0"
+description = "Repository-based knowledge hosting through markdown documents"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material==9.5.18",
+    "mkdocs-mermaid2-plugin",
+]
