@@ -3,7 +3,7 @@ icon: material/home
 title: Cerebro
 ---
 
-# :material-snowflake: Cerebro - GRE Knowledge Management
+Cerebro - GRE Knowledge Management
 
 Welcome to Cerebro, a repository-based system for knowledge hosting through markdown documents.
 
