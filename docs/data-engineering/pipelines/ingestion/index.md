@@ -7,17 +7,7 @@ title: Ingestion
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-    S3[S3 Bucket] -->|event notification| SP[Snowpipe]
-
-    SP -->|COPY INTO| RAW[RAW.EVENTS]
-
-    RAW -->|stream| T[Task]
-
-    T -->|transform| STG[STAGING.EVENTS]
-```
+![Ingestion Architecture](../../../assets/ingestion-architecture.svg)
 
 ## Snowpipe Configuration
 
