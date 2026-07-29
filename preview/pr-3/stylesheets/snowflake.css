@@ -1,0 +1,120 @@
+/* Snowflake Brand Theme for MkDocs Material */
+
+:root {
+  /* Snowflake brand palette */
+  --sf-blue: #29B5E8;
+  --sf-blue-dark: #11567F;
+  --sf-blue-deeper: #0E3B54;
+  --sf-white: #FFFFFF;
+  --sf-gray-light: #F4F8FB;
+  --sf-gray: #E3EBF0;
+  --sf-text: #1B2A4A;
+}
+.md-nav__title {
+  display: none;
+}
+
+/* Light mode overrides */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #29B5E8;
+  --md-primary-fg-color--light: #5BC8ED;
+  --md-primary-fg-color--dark: #11567F;
+  --md-accent-fg-color: #29B5E8;
+  --md-typeset-a-color: #11567F;
+  --md-default-bg-color: #FFFFFF;
+}
+
+/* Dark mode overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #29B5E8;
+  --md-primary-fg-color--light: #5BC8ED;
+  --md-primary-fg-color--dark: #0E3B54;
+  --md-accent-fg-color: #29B5E8;
+  --md-typeset-a-color: #5BC8ED;
+  --md-default-bg-color: #0D1B2A;
+  --md-default-fg-color: #E3EBF0;
+  --md-default-fg-color--light: #B0C4D4;
+  --md-code-bg-color: #0A1628;
+}
+
+/* Header styling */
+.md-header {
+  background: linear-gradient(135deg, #11567F 0%, #0E3B54 100%);
+  box-shadow: 0 2px 8px rgba(14, 59, 84, 0.3);
+}
+
+.md-header__title {
+  font-weight: 600;
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background: #0E3B54;
+}
+
+/* Search bar */
+.md-search__input {
+  border-radius: 4px;
+}
+
+/* Sidebar active link */
+.md-nav__link--active {
+  color: #29B5E8 !important;
+  font-weight: 600;
+}
+
+/* Admonition styling */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #29B5E8;
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(41, 181, 232, 0.1);
+}
+
+/* Code blocks */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="default"] .md-typeset code {
+  background-color: #F4F8FB;
+  color: #11567F;
+}
+
+/* Footer */
+.md-footer {
+  background: #0E3B54;
+}
+
+/* Content links hover */
+.md-typeset a:hover {
+  color: #29B5E8;
+}
+
+/* Table styling */
+.md-typeset table:not([class]) th {
+  background-color: #11567F;
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #0E3B54;
+}
+
+/* Logo area */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.5rem;
+}
+
+/* Snowflake-style button for content tabs */
+.md-typeset .tabbed-labels > label:hover {
+  color: #29B5E8;
+}
+
+.md-typeset .tabbed-labels > label--active {
+  border-color: #29B5E8;
+}
