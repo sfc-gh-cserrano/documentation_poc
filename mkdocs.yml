@@ -9,9 +9,9 @@ theme:
   navigation_depth: 5
   collapse_navigation: true
   features:
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.sections
-    # - navigation.expand
+    - navigation.expand
     # - navigation.top
     - navigation.title
     - navigation.indexes
