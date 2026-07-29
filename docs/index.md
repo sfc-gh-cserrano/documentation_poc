@@ -3,7 +3,7 @@ icon: material/home
 title: Cerebro
 ---
 
-Cerebro - GRE Knowledge Management
+> Global Revenue Enablement Knowledge Management
 
 Welcome to Cerebro, a repository-based system for knowledge hosting through markdown documents.
 
