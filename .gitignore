@@ -9,3 +9,4 @@ specs.md
 # Virtual environments
 .venv/
 .snowflake
+.DS_Store
